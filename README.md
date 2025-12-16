@@ -101,6 +101,10 @@ Considering the compute limitations of today’s edge devices, models with **≤
     - [📦 Ready-to-Deploy Model](#-ready-to-deploy-model)
     - [🛠️ Complete Training Pipeline](#️-complete-training-pipeline)
   - [📖 Table of Contents](#-table-of-contents)
+  - [🚀 Quick Start](#-quick-start)
+    - [📱 AndroidLab Benchmark Setup](#-androidlab-benchmark-setup)
+    - [🚀 Model Deployment \& Inference](#-model-deployment--inference)
+    - [⚙️ Pre-Testing Configuration](#️-pre-testing-configuration)
   - [🌟 Key Features of OpenPhone](#-key-features-of-openphone)
     - [🤖 Lightweight Agentic Foundation Models](#-lightweight-agentic-foundation-models)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework)
@@ -109,10 +113,6 @@ Considering the compute limitations of today’s edge devices, models with **≤
     - [🧠 Model Training: SFT+RL](#-model-training-sftrl)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework-1)
     - [💾 Efficient Memory Mechanism for Mobile Agents](#-efficient-memory-mechanism-for-mobile-agents)
-  - [🚀 Quick Start](#-quick-start)
-    - [📱 AndroidLab Benchmark Setup](#-androidlab-benchmark-setup)
-    - [🚀 Model Deployment \& Inference](#-model-deployment--inference)
-    - [⚙️ Pre-Testing Configuration](#️-pre-testing-configuration)
   - [🧪 Testing \& Evaluation](#-testing--evaluation)
     - [Single Task Testing](#single-task-testing)
     - [Batch Evaluation Scripts](#batch-evaluation-scripts)
@@ -125,6 +125,38 @@ Considering the compute limitations of today’s edge devices, models with **≤
   - [🌟 Citation](#-citation)
   - [🔗 Related Projects](#-related-projects)
   - [📜 License](#-license)
+
+---
+
+## 🚀 Quick Start
+This project comprises three core components designed for comprehensive mobile agent development and evaluation:
+
+- ⚡ For **model training**, please refer to the training guide [README](./model_training/README.md) for comprehensive setup and execution instructions.
+- 🔧 For the **data generation pipeline**, please refer to the data preparation guide [README](./prepare_data/README.md) for detailed implementation steps.
+
+Below, we focus on evaluation using the AndroidLab benchmark framework.
+
+### 📱 AndroidLab Benchmark Setup
+Installation: Follow the official AndroidLab documentation [AndroidLab](https://github.com/THUDM/Android-Lab) for complete setup instructions.<br>
+
+**Environment Configuration**:
+- Recommended Mode: AVD on Mac (arm64) - validated in our experiments.<br>
+- App Setup: Manual installation and task-specific configuration required.<br>
+- Compatibility Note: Original Docker images are not compatible with AVD environments.<br>
+
+### 🚀 Model Deployment & Inference
+**vLLM Integration**:
+- Inference scripts available in ./vllm_script/ directory<br>
+- Optimized for efficient small model serving<br>
+
+**Model Access**:
+- OpenPhone Weights: 3B parameter model hosted on HuggingFace<br>
+- Deployment Process: Download weights → Deploy via vLLM → Configure inference service<br>
+- Service Ready: Seamless integration with evaluation pipeline<br>
+
+### ⚙️ Pre-Testing Configuration
+- API Setup Required: Configure cloud model credentials in ./evaluation/evaluation.py: Line 63, Line 75, Line 81<br>
+- Coming Soon: Streamlined configuration interface in development<br>
 
 ---
 
@@ -164,38 +196,6 @@ Considering the compute limitations of today’s edge devices, models with **≤
 ---
 
 <img src="./figures/model_large.png" style="zoom:100%;" />
-
----
-
-## 🚀 Quick Start
-This project comprises three core components designed for comprehensive mobile agent development and evaluation:
-
-- ⚡ For **model training**, please refer to the training guide [README](./model_training/README.md) for comprehensive setup and execution instructions.
-- 🔧 For the **data generation pipeline**, please refer to the data preparation guide [README](./prepare_data/README.md) for detailed implementation steps.
-
-Below, we focus on evaluation using the AndroidLab benchmark framework.
-
-### 📱 AndroidLab Benchmark Setup
-Installation: Follow the official AndroidLab documentation [AndroidLab](https://github.com/THUDM/Android-Lab) for complete setup instructions.<br>
-
-**Environment Configuration**:
-- Recommended Mode: AVD on Mac (arm64) - validated in our experiments.<br>
-- App Setup: Manual installation and task-specific configuration required.<br>
-- Compatibility Note: Original Docker images are not compatible with AVD environments.<br>
-
-### 🚀 Model Deployment & Inference
-**vLLM Integration**:
-- Inference scripts available in ./vllm_script/ directory<br>
-- Optimized for efficient small model serving<br>
-
-**Model Access**:
-- OpenPhone Weights: 3B parameter model hosted on HuggingFace<br>
-- Deployment Process: Download weights → Deploy via vLLM → Configure inference service<br>
-- Service Ready: Seamless integration with evaluation pipeline<br>
-
-### ⚙️ Pre-Testing Configuration
-- API Setup Required: Configure cloud model credentials in ./evaluation/evaluation.py: Line 63, Line 75, Line 81<br>
-- Coming Soon: Streamlined configuration interface in development<br>
 
 ---
 
