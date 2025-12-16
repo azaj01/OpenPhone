@@ -6,7 +6,7 @@
 
 <div align="center">
 
-# ✨LightAgent✨: Lightweight and Cost-Effective <br> Mobile Agents
+# ✨Open-PhoneAgent✨: Mobile Agentic Foundation Models for AI Phone
 
 </div>
 
