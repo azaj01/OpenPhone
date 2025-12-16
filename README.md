@@ -46,7 +46,7 @@
 
 **The Problem**: Most AI agents rely on expensive cloud APIs and large models that are impractical for real-world on-device deployment. Users face **Privacy Concerns**, **Latency Issues**, and **High Costs** when their phone needs to call external services for every interaction.
 
-**Our Solution**: Open-PhoneAgent introduces the first **Open-Source, 3B-parameter Agentic Foundation Model** designed specifically for on-device smartphone interaction. This compact vision-language model runs entirely locally — meaning **No Privacy Concerns**, **No Cloud Dependence**, and **Zero API Costs**.
+**Our Solution**: OpenPhone introduces the first **Open-Source, 3B-parameter Agentic Foundation Model** designed specifically for on-device smartphone interaction. This compact vision-language model runs entirely locally — meaning **No Privacy Concerns**, **No Cloud Dependence**, and **Zero API Costs**.
 
 **🤔 Why 3B Parameters?** <br>
 We believe the future of mobile AI lies not only in making models larger, but in making them smarter and more efficient for real-world constraints. Our 3B model is:
@@ -99,11 +99,11 @@ Considering the compute limitations of today’s edge devices, models with **≤
     - [Why 3B is the sweet spot for on-device GUI agents](#why-3b-is-the-sweet-spot-for-on-device-gui-agents)
     - [Model release \& resources](#model-release--resources)
   - [📖 Table of Contents](#-table-of-contents)
-  - [🌟 Key Features of OpenPhone](#-key-features-of-open-phoneagent)
+  - [🌟 Key Features of OpenPhone](#-key-features-of-OpenPhone)
     - [🤖 Lightweight Agentic Foundation Models](#-lightweight-agentic-foundation-models)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework)
     - [🎯 Comprehensive Mobile Agent Evaluation Playground](#-comprehensive-mobile-agent-evaluation-playground)
-  - [🌟 Core Solutions of OpenPhone](#-core-solutions-of-open-phoneagent)
+  - [🌟 Core Solutions of OpenPhone](#-core-solutions-of-OpenPhone)
     - [🧠 Model Training: SFT+RL](#-model-training-sftrl)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework-1)
     - [💾 Efficient Memory Mechanism for Mobile Agents](#-efficient-memory-mechanism-for-mobile-agents)
@@ -250,7 +250,7 @@ python generate_result.py --input_folder ./logs/evaluation/ --output_folder ./lo
 
 The key findings from our online evaluation on AndroidLab are summarized as follows:
 
-- Open-PhoneAgent, when deployed in a device-cloud collaborative setting, incurs only a relatively small performance drop while effectively reducing the number of cloud model invocations.
+- OpenPhone, when deployed in a device-cloud collaborative setting, incurs only a relatively small performance drop while effectively reducing the number of cloud model invocations.
 - Notably, prompting large models for extended reasoning does not always yield better results—this benefit depends on the capability of the cloud model, and only sufficiently strong models can take advantage of such strategies.
 - We also report a comparison between LightAgent-3B and both similar-sized and larger models (such as 9B models), showing that LightAgent-3B achieves performance close to that of 9B models, making it a true "small powerhouse."
 - Furthermore, when compared with closed-source models, LightAgent-3B's performance is comparable to previous or lightweight versions of these proprietary models.
@@ -302,7 +302,7 @@ If you find this work helpful to your research, please kindly consider citing ou
 
 ## 🔗 Related Projects
 
-Open-PhoneAgent builds upon excellent open-source projects. We sincerely thank their authors and contributors:
+OpenPhone builds upon excellent open-source projects. We sincerely thank their authors and contributors:
 
 - [AndroidLab](https://github.com/THUDM/Android-Lab) - The benchmark framework.
 - [R1-V](https://github.com/StarsfieldAI/R1-V) - Implementation details for the GRPO training methodology.
@@ -316,8 +316,8 @@ This project is released under the [MIT License](./LICENSE).
 <br>
 
 <p align="center">
-  <em> ❤️ Thanks for visiting ✨ Open-PhoneAgent!</em><br><br>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=HKUDS.Open-PhoneAgent&style=for-the-badge&color=00d4ff" alt="Views">
+  <em> ❤️ Thanks for visiting ✨ OpenPhone!</em><br><br>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=HKUDS.OpenPhone&style=for-the-badge&color=00d4ff" alt="Views">
 </p>
 
 
