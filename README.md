@@ -70,7 +70,7 @@
 
 - **Deployment feasibility**: 3B fits comfortably on a single high-end consumer GPU and is a realistic target for upcoming mobile NPUs, while 7B–9B models typically exceed memory or latency budgets for real edge devices.
 - **Latency vs. capability trade-off**: For GUI control, responsiveness matters as much as accuracy. Our experiments show that a well-trained 3B model offers a much better latency/quality trade-off than larger models that are hard to deploy.
-- **Cloud offloading as a backup, not default**: In LightAgent, the 3B model handles steps locally, with the hardest cases escalated to strong cloud models—reducing cost and preserving user privacy.
+- **Cloud offloading as a backup, not default**: In Open-PhoneAgent, the 3B model handles steps locally, with the hardest cases escalated to strong cloud models—reducing cost and preserving user privacy.
 
 ### Model release & resources
 
@@ -81,7 +81,9 @@
 ---
 
 ## 📖 Table of Contents
-- [✨LightAgent✨: Lightweight and Cost-Effective  Mobile Agents](#lightagent-lightweight-and-cost-effective--mobile-agents)
+- [✨Open-PhoneAgent✨: Mobile Agentic Foundation Models for AI Phone](#open-phoneagent-mobile-agentic-foundation-models-for-ai-phone)
+  - [🎯 What is Open-PhoneAgent?](#-what-is-open-phoneagent)
+  - [💡 Research Highlights](#-research-highlights)
   - [🔍 LightAgent-3B: Open-Source On-Device GUI Agent Model](#-lightagent-3b-open-source-on-device-gui-agent-model)
     - [Why 3B is the sweet spot for on-device GUI agents](#why-3b-is-the-sweet-spot-for-on-device-gui-agents)
     - [Model release \& resources](#model-release--resources)
@@ -90,7 +92,7 @@
     - [🤖 Lightweight Agentic Foundation Models](#-lightweight-agentic-foundation-models)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework)
     - [🎯 Comprehensive Mobile Agent Evaluation Playground](#-comprehensive-mobile-agent-evaluation-playground)
-  - [🌟 Core Solutions of LightAgent](#-core-solutions-of-lightagent)
+  - [🌟 Core Solutions of Open-PhoneAgent](#-core-solutions-of-open-phoneagent)
     - [🧠 Model Training: SFT+RL](#-model-training-sftrl)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework-1)
     - [💾 Efficient Memory Mechanism for Mobile Agents](#-efficient-memory-mechanism-for-mobile-agents)
@@ -129,7 +131,7 @@
 
 ---
 
-## 🌟 Core Solutions of LightAgent
+## 🌟 Core Solutions of Open-PhoneAgent
 
 ### 🧠 Model Training: SFT+RL
 • **Synthetic Data Generation**: Leverages advanced MLLMs to create high-quality reasoning chain training data, addressing the scarcity of manual annotations. <br>
@@ -236,7 +238,7 @@ python generate_result.py --input_folder ./logs/evaluation/ --output_folder ./lo
 
 The key findings from our online evaluation on AndroidLab are summarized as follows:
 
-- LightAgent, when deployed in a device-cloud collaborative setting, incurs only a relatively small performance drop while effectively reducing the number of cloud model invocations.
+- Open-PhoneAgent, when deployed in a device-cloud collaborative setting, incurs only a relatively small performance drop while effectively reducing the number of cloud model invocations.
 - Notably, prompting large models for extended reasoning does not always yield better results—this benefit depends on the capability of the cloud model, and only sufficiently strong models can take advantage of such strategies.
 - We also report a comparison between LightAgent-3B and both similar-sized and larger models (such as 9B models), showing that LightAgent-3B achieves performance close to that of 9B models, making it a true "small powerhouse."
 - Furthermore, when compared with closed-source models, LightAgent-3B's performance is comparable to previous or lightweight versions of these proprietary models.
@@ -288,7 +290,7 @@ If you find this work helpful to your research, please kindly consider citing ou
 
 ## 🔗 Related Projects
 
-LightAgent builds upon excellent open-source projects. We sincerely thank their authors and contributors:
+Open-PhoneAgent builds upon excellent open-source projects. We sincerely thank their authors and contributors:
 
 - [AndroidLab](https://github.com/THUDM/Android-Lab) - The benchmark framework.
 - [R1-V](https://github.com/StarsfieldAI/R1-V) - Implementation details for the GRPO training methodology.
@@ -302,8 +304,8 @@ This project is released under the [MIT License](./LICENSE).
 <br>
 
 <p align="center">
-  <em> ❤️ Thanks for visiting ✨ LightAgent!</em><br><br>
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=HKUDS.LightAgent&style=for-the-badge&color=00d4ff" alt="Views">
+  <em> ❤️ Thanks for visiting ✨ Open-PhoneAgent!</em><br><br>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=HKUDS.Open-PhoneAgent&style=for-the-badge&color=00d4ff" alt="Views">
 </p>
 
 
