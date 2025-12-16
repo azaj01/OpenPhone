@@ -127,6 +127,7 @@ Considering the compute limitations of today’s edge devices, models with **≤
 ---
 
 ## 🌟 Key Features of OpenPhone
+OpenPhone delivers a complete **Mobile AI Ecosystem**. We provide both a **production-ready 3B on-device foundation model** and an **intelligent device-cloud collaboration framework**, enabling developers to build practical mobile agents that balance **performance**, **privacy**, and **cost**.
 
 ### 🤖 Lightweight Agentic Foundation Models
 • **Compact Architecture**: Specialized **3B-scale** Vision-Language Models optimized for mobile GUI tasks with minimal computational footprint.<br>
@@ -142,7 +143,7 @@ Considering the compute limitations of today’s edge devices, models with **≤
 
 ---
 
-## 🌟 Core Solutions of Open-PhoneAgent
+## 🌟 Core Solutions of OpenPhone
 
 ### 🧠 Model Training: SFT+RL
 • **Synthetic Data Generation**: Leverages advanced MLLMs to create high-quality reasoning chain training data, addressing the scarcity of manual annotations. <br>
