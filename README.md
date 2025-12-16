@@ -75,6 +75,8 @@ Considering the compute limitations of today’s edge devices, models with **≤
 - **Privacy-aware Architecture**: 3B enables the phone tasks to run entirely on-device, preserving user privacy and eliminating network dependencies.
 - **Cost-Effective Operation**: By handling most tasks locally, OpenPhone eliminates expensive cloud model APIs and per-request charges.
 
+---
+
 ## 🚀 Model Release & Resources
 
 ### 📦 Ready-to-Deploy Model
@@ -90,18 +92,18 @@ Considering the compute limitations of today’s edge devices, models with **≤
 ---
 
 ## 📖 Table of Contents
-- [✨OpenPhone✨: Mobile Agentic Foundation Models for AI Phone](#open-phoneagent-mobile-agentic-foundation-models-for-ai-phone)
-  - [🎯 What is Open-PhoneAgent?](#-what-is-open-phoneagent)
+- [✨OpenPhone✨: Mobile Agentic Foundation Models for AI Phone](#openphone-mobile-agentic-foundation-models-for-ai-phone)
+  - [🎯 What is OpenPhone?](#-what-is-openphone)
   - [💡 Research Highlights](#-research-highlights)
-  - [🔍 LightAgent-3B: Open-Source On-Device GUI Agent Model](#-lightagent-3b-open-source-on-device-gui-agent-model)
+  - [🔍 OpenPhone-3B: Open-Source Lightweight Agent Model](#-lightagent-3b-open-source-on-device-gui-agent-model)
     - [Why 3B is the sweet spot for on-device GUI agents](#why-3b-is-the-sweet-spot-for-on-device-gui-agents)
     - [Model release \& resources](#model-release--resources)
   - [📖 Table of Contents](#-table-of-contents)
-  - [🌟 Key Features of Open-PhoneAgent](#-key-features-of-open-phoneagent)
+  - [🌟 Key Features of OpenPhone](#-key-features-of-open-phoneagent)
     - [🤖 Lightweight Agentic Foundation Models](#-lightweight-agentic-foundation-models)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework)
     - [🎯 Comprehensive Mobile Agent Evaluation Playground](#-comprehensive-mobile-agent-evaluation-playground)
-  - [🌟 Core Solutions of Open-PhoneAgent](#-core-solutions-of-open-phoneagent)
+  - [🌟 Core Solutions of OpenPhone](#-core-solutions-of-open-phoneagent)
     - [🧠 Model Training: SFT+RL](#-model-training-sftrl)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework-1)
     - [💾 Efficient Memory Mechanism for Mobile Agents](#-efficient-memory-mechanism-for-mobile-agents)
@@ -124,7 +126,7 @@ Considering the compute limitations of today’s edge devices, models with **≤
 
 ---
 
-## 🌟 Key Features of Open-PhoneAgent
+## 🌟 Key Features of OpenPhone
 
 ### 🤖 Lightweight Agentic Foundation Models
 • **Compact Architecture**: Specialized **3B-scale** Vision-Language Models optimized for mobile GUI tasks with minimal computational footprint.<br>
