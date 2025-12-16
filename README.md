@@ -6,12 +6,12 @@
 
 <div align="center">
 
-# ✨Open-PhoneAgent✨: Mobile Agentic Foundation Models for AI Phone
+# ✨OpenPhone✨: Mobile Agentic Foundation Models for AI Phone
 
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Welcome+to+Open-PhoneAgent;Mobile+Agentic+Foundation+Models;AI+Phone" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Welcome+to+OpenPhone;Mobile+Agentic+Foundation+Models;AI+Phone" alt="Typing Animation" />
 </div>
 
 <div align="center">
@@ -42,7 +42,7 @@
   <div style="width: 100%; height: 2px; margin: 20px 0; background: linear-gradient(90deg, transparent, #00d9ff, transparent);"></div>
 </div>
 
-## 🎯 What is Open-PhoneAgent?
+## 🎯 What is OpenPhone?
 
 **The Problem**: Most AI agents rely on expensive cloud APIs and large models that are impractical for real-world on-device deployment. Users face **Privacy Concerns**, **Latency Issues**, and **High Costs** when their phone needs to call external services for every interaction.
 
@@ -58,13 +58,14 @@
 
 ## 💡 Research Highlights
 
-## 🔍 LightAgent-3B: Open-Source On-Device GUI Agent Model
+## 🔍 OpenPhone‑3B: On‑Device Agentic Model
+Considering the compute limitations of today’s edge devices, models with **≤3B parameters** strike a practical balance between capability and deployability. Based on this insight, we introduce **OpenPhone‑3B**, a lightweight yet powerful on‑device agent model.
 
-- **Model size & architecture**: ~3B-parameter vision-language model tailored for mobile GUI understanding and action generation, optimized for efficiency rather than maximal scale.
-- **On-device first**: Designed to run as the **primary agent on the device**, with latency and memory usage compatible with single 3090-class GPUs and future mobile chips, instead of assuming always-on cloud access.
-- **GUI-specialized skills**: Trained to perceive mobile screens, reason over GUI layouts, and produce structured action sequences (click, scroll, input, navigation) for real-world apps.
-- **Open-source release**: We release the full 3B model weights, configuration, and inference stack so that researchers and practitioners can deploy, fine-tune, and extend the model for their own mobile agents.
-- **Practical sweet spot**: In current hardware conditions, 3B sits at a **practical sweet spot**—significantly stronger than tiny models, but still deployable on edge devices where 7B–9B models are often too heavy.
+- **Model Size & Architecture**: A ~3B‑parameter vision‑language model designed for efficient on‑device reasoning and action generation, optimized for performance under tight compute budgets.
+- **On-Device First**: Built to serve as the primary agent running locally, with latency and memory usage compatible with single 3090‑class GPUs and upcoming mobile NPUs—avoiding the need for continuous cloud access.
+- **GUI‑Aware Action Capabilities**: Trained to interpret visual inputs, follow instructions, and generate structured actions across mobile tasks, enabling practical end‑to‑end agent behaviors on real mobile devices.
+- **Open‑Source Release**: We provide full model weights, configuration files, and an inference stack to support deployment, fine‑tuning, and further development by the community.
+- **Practical Sweet Spot**: Under current hardware conditions, the 3B scale provides a **Highly Realistic Sweet Spot**—much stronger than tiny models, yet still deployable on edge devices where 7B–9B models are often too large or too slow.
 
 ### Why 3B is the sweet spot for on-device GUI agents
 
