@@ -73,6 +73,7 @@ The framework uses a two-stage training methodology combining SFT and GRPO reinf
     - [Generate Evaluation Results](#generate-evaluation-results)
     - [Batch Testing File Management](#batch-testing-file-management)
   - [🎯 Evaluation Results](#-evaluation-results)
+  - [🌟 Citation](#-citation)
   - [🔗 Related Projects](#-related-projects)
   - [📜 License](#-license)
 
@@ -244,6 +245,19 @@ LightAgent, thanks to its lightweight architecture, demonstrates a clear advanta
 
 </div>
 </p>
+
+## 🌟 Citation
+
+If you find this work helpful to your research, please kindly consider citing our paper.
+
+```
+@article{jiang2025lightagent,
+  title={LightAgent: Mobile Agentic Foundation Models},
+  author={Jiang, Yangqin and Huang, Chao},
+  journal={arXiv preprint arXiv:2510.22009},
+  year={2025}
+}
+```
 
 ## 🔗 Related Projects
 
