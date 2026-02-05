@@ -30,7 +30,7 @@
       <a href="https://github.com/HKUDS/OpenPhone/stargazers"><img src='https://img.shields.io/github/stars/HKUDS/OpenPhone?color=00d9ff&style=for-the-badge&logo=star&logoColor=white&labelColor=1a1a2e' /></a>
       <a href="./Communication.md"><img src="https://img.shields.io/badge/💬Feishu-Group-07c160?style=for-the-badge&logoColor=white&labelColor=1a1a2e"></a>
       <a href="./Communication.md"><img src="https://img.shields.io/badge/WeChat-Group-07c160?style=for-the-badge&logo=wechat&logoColor=white&labelColor=1a1a2e"></a>
-      <a href=""><img src="https://img.shields.io/badge/Platform-Android-d3d3d3?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a2e"/></a>
+      <a href=""><img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-d3d3d3?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a2e"/></a>
       <a href='https://arxiv.org/abs/2510.22009'><img src='https://img.shields.io/badge/📄arXiv-2510.22009-ff6b6b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a2e'></a>
     </p>
   </div>
@@ -47,6 +47,16 @@
 **The Problem**: Most AI agents rely on expensive cloud APIs and large models that are impractical for real-world on-device deployment. Users face **Privacy Concerns**, **Latency Issues**, and **High Costs** when their phone needs to call external services for every interaction.
 
 **Our Solution**: OpenPhone introduces the first **Open-Source, 3B-parameter Agentic Foundation Model** designed specifically for on-device smartphone interaction. This compact vision-language model runs entirely locally — meaning **No Privacy Concerns**, **No Cloud Dependence**, and **Zero API Costs**.
+
+<div align="center">
+  <div style="background: linear-gradient(135deg, #00d9ff 0%, #0099cc 100%); border-radius: 10px; padding: 20px; margin: 20px 0; border: 2px solid #00d9ff;">
+    <h3 style="color: white; margin: 0 0 10px 0;">🆕 Latest Update: iOS Agent Application Support!</h3>
+    <p style="color: white; margin: 0; font-size: 16px;">
+      We now support <strong>iOS platform</strong>! The framework enables automated email summarization tasks on iOS devices through lightweight on-device models. Implemented in the <code style="background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 4px;">ios_agent/</code> directory, built on our open-source GUI agent model and <strong>Qwen3-VL-4B-Instruct</strong>. 
+      <a href="./ios_agent/README.md" style="color: #ffff00; text-decoration: underline;">See iOS Agent README →</a>
+    </p>
+  </div>
+</div>
 
 ## 🤔 Why 3B Parameters?
 We believe the future of mobile AI lies not only in making models larger, but in making them smarter and more efficient for real-world constraints. Our 3B model is:
@@ -94,6 +104,7 @@ Considering the compute limitations of today’s edge devices, models with **≤
 ## 📖 Table of Contents
 - [✨OpenPhone✨: Mobile Agentic Foundation Models for AI Phone](#openphone-mobile-agentic-foundation-models-for-ai-phone)
   - [🎯 What is OpenPhone?](#-what-is-openphone)
+  - [🤔 Why 3B Parameters?](#-why-3b-parameters)
   - [💡 Research Highlights](#-research-highlights)
     - [🔍 OpenPhone‑3B: Lightweight Agentic Model](#-openphone3b-lightweight-agentic-model)
     - [Why 3B is the Sweet Spot for Phone Agents](#why-3b-is-the-sweet-spot-for-phone-agents)
@@ -121,7 +132,19 @@ Considering the compute limitations of today’s edge devices, models with **≤
     - [LLM Evaluator Setup](#llm-evaluator-setup)
     - [Generate Evaluation Results](#generate-evaluation-results)
     - [Batch Testing File Management](#batch-testing-file-management)
-  - [🎯 Evaluation Results](#-evaluation-results)
+  - [🎯 📊 Key Evaluation Findings for OpenPhone](#--key-evaluation-findings-for-openphone)
+    - [🏆 Small Model, Big Performance](#-small-model-big-performance)
+    - [🥊 Competitive Performance](#-competitive-performance)
+    - [🔄 Device-Cloud Framework Works](#-device-cloud-framework-works)
+    - [🧠 Longer Prompts Don't Always Help](#-longer-prompts-dont-always-help)
+  - [📈 Device-Cloud Distribution Analysis for Phone Agents](#-device-cloud-distribution-analysis-for-phone-agents)
+    - [📊 Workload Distribution](#-workload-distribution)
+    - [💰 Efficiency Gains](#-efficiency-gains)
+    - [🎯 Model Capability Impact](#-model-capability-impact)
+  - [⚡ Inference Speed Comparison](#-inference-speed-comparison)
+    - [🎯 Speed Advantage](#-speed-advantage)
+    - [📊 Quantified Comparison](#-quantified-comparison)
+    - [💡 Practical Implications](#-practical-implications)
   - [🌟 Citation](#-citation)
   - [🔗 Related Projects](#-related-projects)
   - [📜 License](#-license)
